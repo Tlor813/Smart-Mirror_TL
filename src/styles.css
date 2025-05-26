@@ -20,6 +20,7 @@ section {
 /* Time */
 .time {
   font-family: lato;
+  font-size: 2em;
 }
 
 .hours {
@@ -29,6 +30,7 @@ section {
 }
 
 .seconds {
+  display: none;
 }
 
 .amOrPM {
