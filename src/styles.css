@@ -12,7 +12,7 @@
 /* Widgets */
 section {
   
-  padding: 1em;
+  /* padding: ; */
   
   /* Relative Parent. Absolute Child */
   position: relative;
@@ -23,9 +23,28 @@ section {
   font-family: lato;
   font-size: 5em;
   display: flex;
-  flex-direction: row;
+  
+  align-items: center;
   
 }
+
+
+.datetime-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 0.5em; 
+  justify-content: center;
+
+
+  position: absolute;
+  right: 40%;
+  padding: 1em;
+  
+}
+
+
+
 
 .hours {
 }
@@ -43,7 +62,6 @@ section {
 
 /* Date */
 .date {
-  
   font-family: lato;
 }
 
@@ -63,22 +81,29 @@ section {
   Font-size: 2em;
 }
 
-/* Weather */
 .weather {
-  font-family: lato;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  gap: 0.5em; 
+   width: auto;
+  max-width: 200px;
 }
 
-.city {
-  
+.weather .icon {
+ 
+  height: 60px;
+  object-fit: contain;
 }
 
-.temp {
-  
+.weather .temp {
+  font-size: 1.5em;
 }
 
-.weather img {
-  
+.weather .city {
+  font-size: 1em;
 }
 
 /* Smart Mirror */
