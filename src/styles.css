@@ -21,9 +21,9 @@ section {
 /* Time */
 .time {
   font-family: lato;
-  font-size: 5em;
+  font-size: 4em;
   display: flex;
-  
+  color: white;
   align-items: center;
   
 }
@@ -63,6 +63,7 @@ section {
 /* Date */
 .date {
   font-family: lato;
+  color: white;
 }
 
 .month {
@@ -90,24 +91,56 @@ section {
   gap: 0.5em; 
    width: auto;
   max-width: 200px;
+  height: 100px;
+  margin-left: auto;
+  color: white;
+
 }
 
 .weather .icon {
+  width: 200px;
  
-  height: 60px;
+  height: 200px;
   object-fit: contain;
 }
 
 .weather .temp {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .weather .city {
-  font-size: 1em;
+  font-size: 2em;
+}
+
+li{
+  padding:.5em;
+  color: white;
+}
+
+.upcoming{
+  margin-left: 2em;
+  color: white;
+}
+  .Birthday {
+  margin-left: auto; /* Pushes the Birthday list to the right */
+  list-style-type: none; /* Optional: remove bullet points */
+  padding: 0;
+  color: white;
+}
+
+.birth{
+  margin-left: auto; /* Pushes the Birthday list to the right */
+  list-style-type: none; /* Optional: remove bullet points */
+  padding: 1;
+  margin-right: 1em;
+  color: white;
 }
 
 /* Smart Mirror */
 video { 
+
+  border: solid white 2em;
+   box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.7); 
   
   /* Position video      */
     position: absolute;
